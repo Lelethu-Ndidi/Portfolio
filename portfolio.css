@@ -5,11 +5,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
-}
 
-/* custom scroll bar */
+/* styling scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -24,7 +21,7 @@ html{
     background: #555;
 }
 
-/* all similar content styling codes */
+/* spacing each section and styling it */
 section{
     padding: 100px 0;
 }
@@ -33,6 +30,7 @@ section{
     padding: 0 80px;
     margin: auto;
 }
+/* stling the button of viewing my CV */
 #mycv a:link, a:visited {
     background-color: grey;
     color: white;
@@ -48,13 +46,15 @@ section{
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  
+  /* changing the hover colour of the mycv button and view button*/
   a:hover, a:active {
     background-color: rgb(236, 230, 230);
   }
-.about, .services, .skills, .mywork, .testimonials,.contact, footer{
+  /* changing the font of all pages  */
+.about, .services, .skills, .mywork, .testimonials, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
+/* styling each page and making it responsive */
 .about .about-content, 
 .services .service-text,
 .skills .skills-content,
@@ -64,6 +64,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
+/* stiling section titles */
 section .title{
     position: relative;
     text-align: center;
@@ -94,7 +95,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
+/* styling navbar and positining it making it reponsive too*/
 .navbar{
     position: fixed;
     width: 100%;
@@ -117,6 +118,7 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
+/* stying the logo portfolio */
 .navbar .logo a span{
     color: grey;
     transition: all 0.3s ease;
@@ -124,6 +126,7 @@ section .title::after{
 .navbar.sticky .logo a span{
     color: #fff;
 }
+/* Styling the navbar menu's and hover*/
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -143,13 +146,14 @@ section .title::after{
     color: #fff;
 }
 
-/* menu btn styling */
+/* styling menu button */
 .menu-btn{
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
 }
+/* styling the scroll up button */
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -169,13 +173,14 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
+
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
   
-/* home */
+/* styling home */
 .home{
     display: flex;
     background: url("lelethu.JPG") no-repeat center;
@@ -189,6 +194,7 @@ section .title::after{
 .home .max-width{
     margin: auto 0 auto 30px;
 }
+/* styling the cotent in the home page */
 .home .home-content .first-text{
     font-size: 27px;
 }
@@ -222,18 +228,18 @@ section .title::after{
     background: none;
 }
 
-/* about section styling */
+/* styling the about section */
 .about .title::after{
     content: "About ME:";
 }
 .about .about-content .left{
     width: 45%;
 }
+/* placing the image in the about page at the left side of the page */
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
     border-radius: 6px;
 }
+/* placing the content of the about page at the right side of the page */
 .about .about-content .right{
     width: 55%;
 }
@@ -260,16 +266,18 @@ section .title::after{
     border: 2px solid grey;
     transition: all 0.3s ease;
 }
+/* styling the hover of the about content */
 .about .about-content .right a:hover{
     color: grey;
     background: none;
 }
 
-/* services section styling */
+/* styling services section including the colour of projects and contant */
 .services, .contact, .mywork{
     color:#fff;
     background: #111;
 }
+/* styling the title of the services page */
 .services .title::before,
 .contact ,.mywork .title::before{
     background: #fff;
@@ -279,6 +287,7 @@ section .title::after{
     background: #111;
     content: "what i do";
 }
+/* stling the card of the text in services */
 .services .service-text .card{
     width: calc(50% - 30px);
     background: #222;
@@ -288,6 +297,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+/*  styling the hover of the text services */
 .services .service-text .card:hover{
     background: grey;
 }
@@ -311,11 +321,12 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* skills section styling */
-
+/* styling skills section */
+/* styling the title of the skills page */
 .skills .title::after{
     content: "my skills";
 }
+/* styling the skills content */
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
@@ -339,6 +350,7 @@ section .title::after{
     border: 2px solid grey;
     transition: all 0.3s ease;
 }
+/* styling the hover for skills content */
 .skills .skills-content .left a:hover{
     color: grey;
     background: none;
@@ -370,6 +382,7 @@ section .title::after{
     top: 0;
     background: grey;
 }
+/* styling the skills rankings */
 .skills-content .right .html::before{
     width: 95%;
 }
@@ -386,18 +399,20 @@ section .title::after{
     width: 85%;
 }
 
-/* myWork section styling */
+/* styling Projects section*/
 .mywork .title::after{
     content: "What I do";
 }
 .mywork .max-width{
     background: #111;
 }
+/* styling the card containers */
 .card-container{
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
 }
+/* Styling the flipping cards */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -438,16 +453,18 @@ section .title::after{
   transform: rotateY(180deg);
 }
 
-/* testimonials section styling */
+/* styling testimonials section */
 .testimonies .title::after{
     content: "Testmonies";
 }
 
+/* styling the card container */
 .card-container{
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
 }
+/* Stling the flipping cards */
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -464,7 +481,7 @@ section .title::after{
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
+/* Styling the hover after the cards has been flipped */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -487,20 +504,39 @@ section .title::after{
   color: white;
   transform: rotateY(180deg);
 }
-
+/* styling the view buttons */
+#view a:link, a:visited {
+    background-color: rgb(163, 154, 154);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid grey;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
 
 /* contact section styling */
 .contact .title::after{
     content: "Find Me";
 }
+/* separating content from the entry boxes */
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
+/* styling the text */
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+/* styling the left paragraph */
 .contact .contact-content .left p{
     text-align: justify;
 }
@@ -518,6 +554,7 @@ section .title::after{
 .contact .contact-content .info .head{
     font-weight: 500;
 }
+/* styling the sub title */
 .contact .contact-content .info .sub-title{
     color: #333;
 }
@@ -530,10 +567,12 @@ section .title::after{
     width: 100%;
     margin-bottom: 15px;
 }
+/* styling the text area */
 .contact .right form .textarea{
     height: 80px;
     width: 100%;
 }
+/* positing the name and email */
 .contact .right form .name{
     margin-right: 10px;
 }
@@ -560,6 +599,7 @@ section .title::after{
     padding-top: 10px;
     resize: none;
 }
+/* stling the button */
 .contact .right form .button{
     height: 47px;
     width: 170px;
@@ -577,6 +617,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+/* colouring the button hover */
 .contact .right form .button button:hover{
     color: grey;
     background: none;
@@ -598,13 +639,14 @@ footer span a:hover{
 }
 
 
-/* responsive media query start */
+/* responsive media query*/
+/* responsiveness of the home page */
 @media (max-width: 1300px) {
     .home .max-width{
         margin-left: 0px;
     }
 }
-
+/* responsiveness of the picture in the about page */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -617,6 +659,7 @@ footer span a:hover{
         padding: 0 50px;
     }
 }
+/* responsiveness of the menu button, navbar menu, home and about*/
 @media (max-width: 947px){
     .menu-btn{
         display: block;
@@ -682,6 +725,7 @@ footer span a:hover{
     }
 }
 
+/* making home and services responsive */
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -699,6 +743,7 @@ footer span a:hover{
         width: 100%;
     }
 }
+
 
 @media (max-width: 500px) {
     .home .home-content .second-text{
@@ -727,6 +772,7 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+/* making flip card responsive */
 @media screen and (max-width: 620px) {
     .card-container {
       display: flex;
