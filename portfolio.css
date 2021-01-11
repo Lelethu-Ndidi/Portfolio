@@ -674,7 +674,7 @@ footer span a:hover{
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: rgb(65, 62, 62);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
