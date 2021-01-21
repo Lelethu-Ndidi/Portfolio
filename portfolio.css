@@ -285,7 +285,7 @@ section .title::after{
 .services .title::after,
 .contact, .mywork .title::after{
     background: #111;
-    content: "what i do";
+    content: "my Services";
 }
 /* stling the card of the text in services */
 .services .service-text .card{
